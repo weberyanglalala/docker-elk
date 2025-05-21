@@ -98,6 +98,7 @@ services:
       - 5601:5601
     environment:
       KIBANA_SYSTEM_PASSWORD: ${KIBANA_SYSTEM_PASSWORD:-}
+      KIBANA_SERVER_NAME: ${KIBANA_SERVER_NAME:-}
     networks:
       - elk
     depends_on:
